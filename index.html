@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>میوه‌برش 🍉🗡️</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="game"></canvas>
+
+    <!-- نوار بالا -->
+    <div id="hud" class="hidden">
+      <div id="score-box">
+        <span id="score-label">امتیاز</span>
+        <span id="score">۰</span>
+      </div>
+      <div id="lives"></div>
+      <button id="mute" aria-label="صدا">🔊</button>
+    </div>
+
+    <!-- منوی اصلی -->
+    <div id="menu" class="overlay">
+      <h1 class="title">میوه‌برش</h1>
+      <p class="subtitle">میوه‌ها رو توی هوا نصف کن! 🍊🍉</p>
+      <div id="best" class="best hidden">🏆 رکورد: ۰</div>
+      <button id="play" class="btn-primary">شروع بازی</button>
+      <p class="hint">انگشتت رو روی میوه‌ها بکش ✨</p>
+    </div>
+
+    <!-- پایان بازی -->
+    <div id="gameover" class="overlay hidden">
+      <h2>پایان بازی</h2>
+      <p id="go-reason"></p>
+      <div class="stats">
+        <div><span>امتیاز</span><b id="final-score">۰</b></div>
+        <div><span>بهترین</span><b id="final-best">۰</b></div>
+      </div>
+      <button id="again" class="btn-primary">دوباره</button>
+      <button id="home" class="btn-ghost">منوی اصلی</button>
+    </div>
+  </div>
+
+  <script src="js/audio.js"></script>
+  <script src="js/fruits.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
